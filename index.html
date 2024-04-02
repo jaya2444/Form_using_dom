@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Assignment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <hr>
+    <div class="form-container">
+        <h2>Task Assignment Form</h2>
+
+        <form>
+
+            <p>Employee Name</p>
+            <div class="input-name">
+
+                <div class="d-flex">
+                    <input type="text" class="name" id="name">
+                    <label for="name">First Name</label>
+                </div>
+                <div class="d-flex">
+                    <input type="text" class="name" id="last">
+                    <label for="last">Last Name</label>
+                </div>
+
+
+            </div>
+            <br>
+            <p>Manager Name</p>
+            <div class="input-name">
+
+                <div class="d-flex">
+                    <input type="text" class="name" id="mname">
+                    <label for="mname">First Name</label>
+                </div>
+                <div class="d-flex">
+                    <input type="text" class="name" id="mlast">
+                    <label for="mlast">Last Name</label>
+                </div>
+
+
+            </div>
+            <br>
+            <div class="input-name">
+                <div class="d-flex">
+                    <label for="Task">Task</label>
+                    <input type="text" class="name" id="Task">
+
+                </div>
+                <div class="d-flex">
+                    <label for="TaskId">Task id</label>
+                    <input type="text" class="name" id="TaskId">
+                </div>
+
+
+            </div>
+            <br>
+            <br>
+            <label for="select">Status</label>
+            <br>
+            <br>
+            <input type="radio" name="size" value="Not Started" id="xs">
+            <label for="xs">Not Started</label>
+            <br>
+            <input type="radio" name="size" value="In Progress" id="s">
+            <label for="s">In Progress</label>
+            <br>
+            <input type="radio" name="size" value="Done" id="m">
+            <label for="m">Done</label>
+            <br>
+            <input type="radio" name="size" value="Awaiting Feedback" id="xl">
+            <label for="xl">Awaiting Feedback</label>
+
+            <br>
+            <br>
+            <br>
+            <!-- <div style="display: flex; flex-direction: column; gap: 10px;">
+                <label for="box" >Additional Notes</label>
+                <input type="text" required class="text" placeholder="Type here......" id="box">
+            </div>
+            
+            <br>
+            <br>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <label for="box2" >Instructions</label>
+                <input type="text" class="box2" required id="box2">
+            </div> -->
+            <div class="last">
+                <div>Additional Notes</div>
+                <br>
+                <textarea name="Notes" cols="72" rows="5" id="box" placeholder="Type Here..."></textarea>
+                <br>
+                <br>
+                <div>Instructions</div>
+                <br>
+                <textarea name="instructions" cols="72" rows="3" id="box2" placeholder="Instructions..."></textarea>
+            </div>
+
+            <br>
+            <br>
+            <hr>
+            <div class="d-flex">
+                <button type="submit" id="btn">Submit</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
